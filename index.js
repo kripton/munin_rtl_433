@@ -42,7 +42,7 @@ http.get('http://' + host + ':' + port + '/', function(response) {
     var sensorStates = JSON.parse(body);
 
     if (process.argv[2] == "config") {
-      console.log('graph_title rtl_443 ' + type + '\ngraph_vlabel ' + type);
+      console.log('graph_title rtl_443 ' + type + '\ngraph_category sensors\ngraph_vlabel ' + type);
     }
 
     var sensorId;
